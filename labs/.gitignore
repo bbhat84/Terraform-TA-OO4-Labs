@@ -1,0 +1,21 @@
+# Terraform working directory — never commit
+.terraform/
+
+# State files — contain sensitive infrastructure details
+*.tfstate
+*.tfstate.backup
+*.tfstate.*.backup
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Variable files — may contain secrets
+*.tfvars
+*.tfvars.json
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
